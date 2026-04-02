@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="physics_informed_ddpm",
+    name="physics-guided-diffusion",
     version="0.1.0",
     author="Bilal Rahou",
     description="Physics-Informed Diffusion Model for Image synthesis",
