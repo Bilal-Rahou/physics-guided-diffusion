@@ -26,7 +26,7 @@ It is recommended to set up an isolated Python environment before installation.
 
 ```bash
 # Clone the repository
-git clone [https://github.com/](https://github.com/)<your-username>/physics-guided-diffusion.git
+git clone https://github.com/Bilal-Rahou/physics-guided-diffusion.git
 cd physics-guided-diffusion
 
 # Install required dependencies
