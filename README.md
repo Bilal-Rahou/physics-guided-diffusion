@@ -1,4 +1,4 @@
-# Physics-Guided Diffusion for Thermal Field Reconstruction and Defect Detection
+# Physics-Guided Diffusion for Thermal Field Generation and Defect Detection
 
 This repository contains a PyTorch implementation of our Physics-Informed Denoising Diffusion Probabilistic Model (DDPM). The framework is designed to combine deep generative learning with physical laws by integrating analytical thermal physics directly into the diffusion process. It is primarily developed for active thermography and Non-Destructive Testing (NDT), specifically focusing on the generation and evaluation of thermal fields in cracked and crack-free specimens.
 
