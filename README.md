@@ -18,7 +18,6 @@ While standard diffusion models rely purely on data distributions, this framewor
 | :--- | :--- |
 | `src/` | Core model architecture, diffusion process, and main training. |
 | `src/utils/` | Utility modules for image preprocessing, residual calculations, and performance metrics (FID, F1, mAP). |
-| `tests/` | Unit testing suite. |
 
 ## Installation
 
