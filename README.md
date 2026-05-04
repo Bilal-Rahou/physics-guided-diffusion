@@ -1,6 +1,6 @@
 # Physics-Guided Diffusion for Thermal Field Generation and Defect Detection
 
-This repository contains a PyTorch implementation of our Physics-Informed Denoising Diffusion Probabilistic Model (DDPM). The framework is designed to combine deep generative learning with physical laws by integrating analytical thermal physics directly into the diffusion process. It is primarily developed for active thermography and Non-Destructive Testing (NDT), specifically focusing on the generation and evaluation of thermal fields in cracked and crack-free specimens.
+This repository contains a PyTorch implementation of our Physics-Guided Denoising Diffusion Probabilistic Model. The framework is designed to combine deep generative learning with physical laws by integrating analytical thermal physics directly into the diffusion process of a DDPM. It is primarily developed for active thermography and Non-Destructive Testing (NDT), specifically focusing on the generation and evaluation of thermal fields in cracked and crack-free specimens.
 
 ## Overview
 
@@ -8,7 +8,7 @@ While standard diffusion models rely purely on data distributions, this framewor
 
 ### Key features
 
-* **Physics-Informed Regularization:** Computes a residual physics loss to quantify and minimize the deviation between the generated thermal fields and theoretical models.
+* **Physics Regularization:** Computes a residual physics loss to quantify and minimize the deviation between the generated thermal fields and theoretical models.
 * **Analytical Integration:** Implements analytical integrators utilizing Gauss-Legendre quadrature with batched processing
 * **Dual-Mode Generation:** Supports distinct training pipelines for both crack-free baseline samples and cracked samples.
 
@@ -16,9 +16,9 @@ While standard diffusion models rely purely on data distributions, this framewor
 
 | Directory | Description |
 | :--- | :--- |
-| `src/` | Core model architectures, diffusion processes, and main training scripts. |
+| `src/` | Core model architecture, diffusion process, and main training. |
 | `src/utils/` | Utility modules for image preprocessing, residual calculations, and performance metrics (FID, F1, mAP). |
-| `tests/` | Unit testing suite to ensure mathematical and structural integrity. |
+| `tests/` | Unit testing suite. |
 
 ## Installation
 
