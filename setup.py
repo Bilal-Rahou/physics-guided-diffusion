@@ -20,5 +20,7 @@ setup(
         "accelerate",
         "einops",
         "opencv-python",
+        "scikit-image",
+        "pytorch-fid",
     ],
 )
