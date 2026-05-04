@@ -1201,7 +1201,7 @@ class Trainer:
         fid_log_file = self.results_folder / "fid_scores.txt"
         if not fid_log_file.exists():
             with open(fid_log_file, "w") as f:
-                f.write("Step,FID\n")  # Write header for the log file
+                f.write("step,fid,residual_error\n")  # Write header for the log file
 
         with tqdm(initial=self.step, total=self.train_num_steps, disable=not accelerator.is_main_process) as pbar:
 
