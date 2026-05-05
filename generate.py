@@ -4,6 +4,15 @@ from torchvision import utils
 import math
 import os
 
+# ==========================================
+# CONFIGURATION
+# ==========================================
+checkpoint_path = 'physics_v_10-11_cracks_10%/model-1.pt'  # Path to your checkpoint
+n_samples = 64
+batch_size = 64  # You can adjust this
+results_folder = './generation_examples_ema'
+# ==========================================
+
 # Reproducibility (same as before)
 import numpy as np, random
 SEED = 42
@@ -25,7 +34,6 @@ def strip_prefix_from_state_dict(state_dict, prefix='online_model.'):
     return new_state_dict
 
 # Output path
-results_folder = './generation_examples_ema'
 os.makedirs(results_folder, exist_ok=True)
 
 # Rebuild UNet model
@@ -54,7 +62,6 @@ diffusion = PhysicsInformedDiffusion(
     r_s=0.00065
 )
 
-checkpoint_path = 'physics_v_10-11_cracks_10%/model-1.pt'  # Path to your checkpoint
 checkpoint = torch.load(checkpoint_path, map_location='cuda' if torch.cuda.is_available() else 'cpu')
 
 # If using EMA weights (as is common in DDPM training), use 'ema'
@@ -75,8 +82,6 @@ if ema_state_dict is not None:
 else:
     print("⚠️ No EMA weights found in checkpoint")
 
-n_samples = 64
-batch_size = 64  # You can adjust this
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 diffusion = diffusion.to(device)
