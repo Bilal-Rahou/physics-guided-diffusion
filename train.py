@@ -15,8 +15,8 @@ torch.backends.cudnn.deterministic = True  # Ensures deterministic behavior
 torch.backends.cudnn.benchmark = False     # May reduce performance but ensures reproducibility
 
 # Path to dataset
-image_folder = r"/d/brahou/data/train/positive"
-test_folder = r"/d/brahou/data/test/positive"
+image_folder = r"./data/train/positive"
+test_folder = r"./data/test/positive"
 
 # Define the U-Net model
 model = Unet(
