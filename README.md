@@ -18,7 +18,7 @@ While standard diffusion models rely purely on data distributions, this framewor
 | :--- | :--- |
 | `src/` | Core model architecture. |
 | `src/utils/` | Utility modules for image preprocessing, residual calculations, and performance metrics (FID, F1, mAP). |
-| `./`	The base folder contains the main execution scripts (train.py and generate.py). |
+| `./` | The base folder contains the main execution scripts (train.py and generate.py). |
 ## Installation
 
 It is recommended to set up an isolated Python environment before installation.
