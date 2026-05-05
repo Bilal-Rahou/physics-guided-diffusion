@@ -15,8 +15,8 @@ torch.backends.cudnn.deterministic = True  # Ensures deterministic behavior
 torch.backends.cudnn.benchmark = False     # May reduce performance but ensures reproducibility
 
 # Path to dataset
-image_folder = r"/d/brahou/data/flyd_frames_classification/data_flyd_frames_cropped/positive"
-test_folder = r"/d/brahou/data/flyd_frames_classification/data_flyd_frames_cropped/positive"
+image_folder = r"/d/brahou/data/train/positive"
+test_folder = r"/d/brahou/data/test/positive"
 
 # Define the U-Net model
 model = Unet(
@@ -42,7 +42,7 @@ diffusion = PhysicsInformedDiffusion(
     alpha=0.38,                # Efficiency
     pixel_size=0.0003,         # Pixel size (in meters)
     r_s=0.00075,                 # Gaussian radius (in meters)
-    mode="uncracked"
+    mode="cracked"
 )
 
 # Define the trainer
