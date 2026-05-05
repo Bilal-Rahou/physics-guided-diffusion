@@ -17,6 +17,7 @@ torch.backends.cudnn.benchmark = False     # May reduce performance but ensures 
 # Path to dataset
 image_folder = r"/d/brahou/data/flyd_frames_classification/data_flyd_frames_cropped/positive"
 test_folder = r"/d/brahou/data/flyd_frames_classification/data_flyd_frames_cropped/positive"
+
 # Define the U-Net model
 model = Unet(
     dim=64,
