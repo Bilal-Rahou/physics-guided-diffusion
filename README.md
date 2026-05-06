@@ -18,6 +18,7 @@ While standard diffusion models rely purely on data distributions, this framewor
 | :--- | :--- |
 | `src/` | Core model architecture. |
 | `src/utils/` | Utility modules for image preprocessing, residual calculations, and performance metrics (FID, F1, mAP). |
+| `data/` | Thermography dataset from https://github.com/kevinhelvig/FLYD. |
 | `./` | The base folder contains the main execution scripts (train.py and generate.py). |
 ## Installation
 
